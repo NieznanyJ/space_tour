@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href='destination.css'>
+  <script src="app.js" defer></script>
+  <title>Space tourism website</title>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <img src="logo.svg" alt="logo" class="logo">
+      <img src="icon-hamburger.svg" class="hamburger nav-toggle" alt="open-navigation">
+        <img src="icon-close.svg" class="close nav-toggle hidden" alt="close-navigation">
+      <ul class="nav-list " data-visible="false">
+        
+        <a class="nav-item"  href="index.html"><li><span>00</span> Home</li></a>
+        <a class="nav-item active-nav"  href="destination.html"><li><span>01</span> Destination</li></a>
+        <a class="nav-item"  href="crew.html" ><li ><span>02</span> Crew</li></a>
+        <a class="nav-item"  href="technology.html" ><li ><span>03</span> Technology</li></a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="pick-destnation sub-title"><span>01</span> Pick your destination</h2>
+    <img src="image-moon.png" alt="moon" class="planet-img">
+    <ul class="destination-list">
+      <li class="planet moon active-planet">Moon</li>
+      <li class="planet mars">Mars</li>
+      <li class="planet europa">Europa</li>
+      <li class="planet titan">Titan</li>
+    </ul>
+    <h1 class="current-destination">Moon</h1>
+    <p class="planet-description"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+      regain perspective and come back refreshed. While you’re there, take in some history 
+      by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      <hr>
+      <div class="unit-div">
+        <div class="distance-div">
+          <p class="avg-distance unit-para">Avg. distance</p>
+      <p class="distance unit">384,400 km</p>
+        </div>
+      <div class="time-div">
+        <p class="time-travel unit-para">Est. travel time</p>
+      <p class="time unit">3 days</p>
+      </div>
+      </div>
+  </main>
+ 
+
+  
+
+
+</body>
+</html>

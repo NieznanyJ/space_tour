@@ -1,0 +1,229 @@
+@import 'fonts.css';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background-crew-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+main{
+    padding: 1em;
+    text-align: center;
+}
+
+.meet-crew{
+    margin: .5em auto;
+    font-family: 'Barlow con', 'sans-serif';
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.meet-crew span{
+    
+    margin-right: 1em;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+
+.crew-img{
+    height: 280px;
+    margin: auto;
+    margin-top: 1em;
+}
+
+hr{
+    opacity: .2;
+}
+
+.crew-change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #979797;
+    border-radius: 50%;
+}
+
+.dot:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.dot-active{
+    background-color: #fff;
+}
+
+.crew-title{
+    margin: .5em;
+    font-family: 'Bellefair', 'sans-serif';
+    text-transform: uppercase;
+    font-weight: 200;
+    opacity: .6;
+}
+
+.crew-name{
+    margin: .5em;
+    font-size: 24px;
+    font-family: 'Bellefair', 'sans-serif';
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.crew-description{
+    width: 95%;
+    max-width: 60ch;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Barlow', 'sans-serif';
+    font-weight: 200;
+    line-height: 25px;
+    color: #D0D6F9;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url('background-crew-tablet.jpg');
+    }
+
+    .sub-title{
+        text-align: start;
+        margin-left: .5em;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .crew-box{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    
+    .crew-text-box{
+        margin-top: 2em;
+    }
+
+    .crew-img-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .crew-img{
+        
+        align-self: flex-end;
+    }
+
+    .crew-title{
+        font-size: 24px;
+    }
+
+    .crew-name{
+        font-size: 40px;
+    }
+    .crew-description{
+        height: 130px;
+        max-width: 60%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .crew-img{
+        height: 35em;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: url('background-crew-desktop.jpg');
+    }
+
+    main, .crew-box{
+        grid-column: 1/ 13;
+        display: grid;
+        grid-template-columns: repeat(12, 65px);
+        grid-template-rows: repeat(12, 35px);
+        gap: 30px;
+        justify-content: center;
+        margin: auto;
+    }
+    .meet-crew{
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+
+    
+    
+    .crew-img-box{
+        grid-column: 7/13;
+        grid-row: 1/13;
+
+    }
+
+    .crew-img{
+        margin: 0;
+    }
+
+    .crew-name, .crew-description{
+        margin: .5em 0;
+    }
+
+    .crew-name{
+        font-size: 56px;
+    }
+
+    .crew-description{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .crew-title{
+        font-size: 32px;
+        margin: 0;
+    }
+
+ 
+    .crew-text-box{     
+        text-align: start;   
+        grid-column: 1/9;
+        grid-row: 3/5;
+    }
+
+    .crew-change{
+        justify-content: flex-start;
+        grid-column: 1/3;
+        grid-row: 9/12 ;
+        margin: 0;
+    }
+
+    .dot{
+        width: 15px;
+        height: 15px;
+    }
+
+}
