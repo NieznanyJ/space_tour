@@ -169,7 +169,7 @@ main{
 
 @media  screen  and (min-width: 1720px){
     main{
-        grid-column: 4/10;
+        grid-column: span 6 /10;
         position: relative;
         top: 5%;
         
