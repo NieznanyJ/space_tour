@@ -119,6 +119,7 @@ main{
 
 @media screen and (min-width: 1440px) {
     body{
+        background-image: url('background-home-desktop.jpg') ;
         display: grid;
         grid-template-columns: repeat(12, 65px);
         gap: 30px;
